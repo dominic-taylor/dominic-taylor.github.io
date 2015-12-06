@@ -1,5 +1,23 @@
-body {
-  background-color: #008080;
-  font: 12px/1.6 helvetica, arial, sans-serif;
-
+body { 
+  background-color: white;
+  font: 12px/1.6 helvetica, arial, sans-serif, #963;
+  text-align: center; 
 }
+p {
+  color: black;
+}
+header {   font-size: 30px;
+  font-weight: bold;
+  background-color: #339966;
+  padding: 0px 10px 0 20px;
+  overflow: hidden;
+}
+nav {
+  border-top: 5px solid #7c7; /* mid green */
+  background-color: #efe;     /* pale green */
+  color: #050;
+}
+ a {
+   padding: 15% solid;
+   font-size: 20px; 
+   }
