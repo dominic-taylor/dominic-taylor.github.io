@@ -28,7 +28,8 @@ a:link {
   padding-bottom: 50px;
 }
 
-.content {
+.content,
+.content ul {
   background-color: #FFCDAF;
   list-style: none;
   margin-left: auto;
