@@ -14,7 +14,7 @@
 
 .nav ul,
 a:link {
-  background-color: #FFF7E2;
+  
   list-style: none;  
   margin-left: auto;
   text-decoration: none;
@@ -28,8 +28,7 @@ a:link {
   padding-bottom: 50px;
 }
 
-.content,
-.content ul {
+.content {
   background-color: #FFCDAF;
   list-style: none;
   margin-left: auto;
@@ -37,6 +36,9 @@ a:link {
   padding-bottom: 10px;
   text-align: center;
   text-decoration: none;
+}
+.content ul {
+  background: none;
 }
 .content p, .content h4 {
   margin: 20px;
