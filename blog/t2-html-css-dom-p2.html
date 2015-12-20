@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Dominic's cracking dev adventure </title>
+    <title>Dominic Taylor's Website</title>
     <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+      <link rel="stylesheet" href="https://dominic-taylor.github.io/styles/main.css" type="text/css"> 
   </head>
+
+<body>
+ 
+  <div class="container">
    
-  <body>
-  <header>
-    <h1>Tēnā koutou </h1>
-    <h2> Ko Dominic ahau </h2>
-    <h3>11 December 2015</h3>
-    
-    <h3> Technical Blog</h3>
-  </header> 
-   <div class="nav">
-   <ul>
-   <li> <a href="http://dominic-taylor.github.io/index.html">Home</a> </li>
-   </ul>
-   </div> 
-<div class="content">
-  
-<h4>Udacity Reflection Part II</h4>  
+   <div class="header">
+     <h1>Haere mai - Welcome!</h1>
+   </div><!-- /header --> 
+
+    <div class="row">
+      <div class="three columns">
+      <img class="icon" src="http://placehold.it/150x150">
+        <div class="nav">
+          <ul>
+            <li><a href="http://getskeleton.com">About</a></li>
+            <li><a href="http://getskeleton.com">Dev Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="http://getskeleton.com">Contact</a></li>                 
+          </ul> 
+        </div>    <!--/nav -->   
+      </div>      
+      <div class="nine columns">
+        <div class="content">
+          <h4>Udacity Reflection Part II</h4>  
 
 <h4>What is grid based design? </h4>
 <p> Grid based design is how many, if not all webpages, are layed out. From the design side a page is divided into a grid of rectangles of varying size in which is put content. Code-wise, this is acheviced by creating a row class which spans the width of the page, and 12 column classes, each spanning 1/12th of the width. 12 is chosen as these can be used to make a grid with divisons which can handle different sizes more easily.  </p>
@@ -32,7 +41,10 @@
 
 <h4>Semantic structure</h4>
 <p> Semantic structure refers to how code is written, specifically its' clarity and readabilty. Code with good semantic structure should allow a developer to have a pretty good idea of how it will look as a webpage without opening it in a browser. This can be done by using indentation to make the structure clear, as well as tags that describe the meanging of an element, such as &ltimg&gt, &ltmain&gt, or &ltnav&gt, rather than just &ltdiv&gt or &ltspan&gt.  </p>
+      </div><!--end row class-->
+      </div>
+    </div> <!--end row class-->
+  </div> <!--end contatiner class-->
 
-</div> 
- </body>
+  </body>
 </html> 
