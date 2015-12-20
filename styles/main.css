@@ -28,17 +28,20 @@ a:link {
   padding-bottom: 50px;
 }
 
-.content {
+.content,
+.content ul {
   background-color: #FFCDAF;
+  list-style: none;
+  margin-left: auto;
   margin-right: 25px;
   padding-bottom: 10px;
   text-align: center;
+  text-decoration: none;
 }
 .content p, .content h4 {
   margin: 20px;
   padding: 10px;
 }
-
 .icon {
   display: block;
   margin-bottom: 10px;
