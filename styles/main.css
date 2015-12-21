@@ -44,13 +44,12 @@ a:link {
   padding: 10px;
 }
 
-.img-rot {
-   transform: rotate(270deg), scale(.75, .75);
+.img-rot {  
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
- 
+  -webkit-transform: rotate(270deg) scale(.75, .75);
+  transform: scale(.75, .75);
 }
 
 
