@@ -51,5 +51,12 @@ a:link {
   -webkit-transform: rotate(270deg) scale(.65, .65);
   transform: rotate(270deg) scale(.65, .65);
 }
+.img-size {
+  -moz-transform: scale(.65, .65);
+  -ms-transform: scale(.65, .65);
+  -o-transform: scale(.65, .65);
+  -webkit-transform: scale(.65, .65);
+  transform: scale(.65, .65);
+}
 
 
