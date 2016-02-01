@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dominic Taylor's Website</title>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+      <link rel="stylesheet" href="https://dominic-taylor.github.io/styles/main.css" type="text/css"> 
+  </head>
+
+<body>
+ 
+  <div class="container">
+   
+    <div class="header">
+     <h1>Haere mai - Welcome!</h1>
+    </div><!-- /header --> 
+
+    <div class="row">
+      <div class="three columns">
+        <div class="nav">
+          <ul>
+            <li><a href="https://dominic-taylor.github.io/">About</a></li>
+            <li><a href="https://dominic-taylor.github.io/blog/bloghub.html">Dev Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>                  
+          </ul> 
+        </div>    <!--/nav -->   
+      </div>   
+
+      <div class="nine columns">
+        <div class="content">
+           <h4> What 'scope' is, and how it works in javascript </h4>
+                <p>Scope refers to the reach of a variable within a code which is related to where is is declared. For example something
+                like  'var globalVariable = 5;' will be a 'global' variable, and any other function or code can refer to it. But the variable in this function <br> 'adder (a, b) { var c = a+b;  
+                return c;  }' <br> 'c' is a local variable, and its value can only be changed within the function. The 'c' can be passed out of the function with the 'return' and accessed that way. So <br> globalVariable = adder(5, 4) <br> would end up with the value of 'c' and as the adder() can access the globalVariable,  add(globalVariable, 7); would work. 
+
+
+               </p>
+           <h4>In the javascript language, describe all the use cases for each of:</h4>
+                  <ul>
+                       <li>parentheses () - e.g. '1. Execute a function var result = doSomething()'</li>
+                       <p>Parentheses are used in functions to hold arguments and also to determine the order of mathmatical operations.</p>
+                       <li>brackets []      </li>
+                       <p>Square brackets are used to hold the information contained in an array element and can be used to assign values or access elements of an array, ie  thisArray[0] = 6; means the the value of the thisArray's first element is now '6'.</p>  
+                       <li>braces {}        </li>                             
+                       <p>Curly braces are used at the begining and end of a function and when called all the code within the brackets is executed.</p>
+                       <li>single quotes '' and double quotes ""</li>
+                       <p>Single or double quotes can be used to hold strings like "I am a cool dude". There is no prefered method so either can be used, but some JavaScript libaries use quotes differently and you should be consistent in you own code. You should also note using the same quote mark inside a string, i.e "I am a "cool" dude" will be read as "I am a", and likely lead to errors, so you should use the other type of quote if you want actual quote marks in your string i.e "I am a 'cool' dude" </p>                      
+                     </ul>                               
+            
+          </div><!--end content class-->
+      </div> <!-- /nine col -->
+    </div> <!--end row class-->
+  </div> <!--end contatiner class-->
+
+
+</body>
+</html> 
