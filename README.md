@@ -1,2 +1,2 @@
 # dominic-taylor.github.io
-Dominic's Blog
+My old blog I wrote during EDA.
