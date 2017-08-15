@@ -1,4 +1,4 @@
-html {
+* {
 	padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ header {
 	background: linear-gradient(0deg, blue, green 40%, red);
 	background: linear-gradient(10deg, transparent, red, orange, yellow, green, blue, indigo, violet);
 */
-	max-height: 75vh;
+	height: 70vh;
 	width: 100%;
 	padding: 2vw;
 }
@@ -22,8 +22,7 @@ h1	{
 }
 
 main	{
-	max-height: 25vh;
-	height: 100%;
+	height: 30vh;
 	width: 100%;
 	border-top: 2px solid #333;
 	background: linear-gradient(45deg, transparent, rgba(3,3,3,0.3) );
@@ -31,12 +30,18 @@ main	{
 }
 
 main p {
-padding: 0 2vw;
+max-width: 90%;
+padding: 1%;
 }
 
-.highlight{
-background: yellow; 
+ul{
+	padding: 10px 0 0 40px;
 }
+li {
+	padding: 3px 0;
+
+}
+
 a {
 	text-decoration: none;
 }
@@ -45,8 +50,11 @@ a:hover{
 }
 
 .container {
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
+}
+.highlight{
+background: yellow; 
 }
