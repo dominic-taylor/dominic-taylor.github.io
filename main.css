@@ -48,13 +48,13 @@ h1	{
 .nav_link {
 	vertical-align: baseline;
 	text-decoration: none;
-	display: block;
+	/*display: block;*/
 	background: #e84635;
 	min-width: 200px;
 	width: auto;
 	min-height: 50px;
 	height: auto;
 	margin: 5px;
-	padding: 0.5rem 1rem;
+	/*padding: 0.5rem 1rem;*/
 	font-size: 1.5rem;
 }
