@@ -6,6 +6,9 @@
     <meta name="description" content="Dominic Taylor's personal website and vegetables.">
     <title>Dominic Taylor's Website</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   </head>
 
 <body>
@@ -17,6 +20,8 @@
       <h2>I am a developer living in Aotearoa New Zealand.</h2>
       <h2>This is my website. Take a look around and give me a yell if you need some work done. Cheers. </h2>
       </div>
+            <router-view></router-view>
+
     </section>
     <div class="small-container green bluetext">
       <section class="two-thirds padding-20">
@@ -29,6 +34,8 @@
               <li><a class="nav_link" href="./talk-wellington.html">Talk Wellington</a>
               <li><a href="#">etc</a></li>
             </ul>
+              <router-link to="/foo">go to Foo</router-link>
+        <router-link to="/bar">go to Bar</router-link>
 
           </nav>
       </section>
