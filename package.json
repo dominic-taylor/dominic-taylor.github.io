@@ -1,0 +1,27 @@
+{
+  "name": "dominic-taylor.github.io",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": "index.js",
+  "dependencies": {
+    "vueify": "^9.4.1"
+  },
+  "devDependencies": {
+    "vue": "^2.4.2",
+    "vueify": "^9.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominic-taylor/dominic-taylor.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominic-taylor/dominic-taylor.github.io/issues"
+  },
+  "homepage": "https://github.com/dominic-taylor/dominic-taylor.github.io#readme"
+}

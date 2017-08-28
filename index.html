@@ -12,14 +12,10 @@
   </head>
 
 <body>
-  <main class="container ">
+  <main class="container" id="app">
 
     <section class="main square-content yellow redColour">
-      <div class="headingbox">
-      <h1>Hi, I'm Dominic</h1>
-      <h2>I am a developer living in Aotearoa New Zealand.</h2>
-      <h2>This is my website. Take a look around and give me a yell if you need some work done. Cheers. </h2>
-      </div>
+     
             <router-view></router-view>
 
     </section>
@@ -29,32 +25,21 @@
         <h3><i>for fun and profit</i></h3>
         <nav class="">
             <ul>
-              <li><a class="nav_link" href="./pong.html">Pickup Pong</a>
-              <li><a class="nav_link" href="./fin.html">Fin</a>
-              <li><a class="nav_link" href="./talk-wellington.html">Talk Wellington</a>
-              <li><a href="#">etc</a></li>
-            </ul>
-              <router-link to="/foo">go to Foo</router-link>
-        <router-link to="/bar">go to Bar</router-link>
-
-          </nav>
-      </section>
-    <!-- <section class="two-thirds blue whitetext">
-        <h2>Thoughts</h2>
-        <p>What is live? </p>
-      <nav class="">
-          <ul>
-            <li><a class="nav_link" href="#">Stuff I have made</a>
-            <li><a class="nav_link" href="#">Thoughts</a>
-            <li><a class="nav_link" href="#">Contact</a>
-          </ul>
+              <li><router-link class="nav_link" to="/pong">Pick-Up Pong</router-link></li>
+              <li><router-link class="nav_link" to="/fin">Fin</router-link></li>
+              <li><router-link class="nav_link" to="/talk-wellington">Talk Wellington</router-link></li>
+              <li><router-link class="nav_link" to="/trails">Trails</router-link></li>
+              <li><router-link class="nav_link" to="/pong">ViewChoose</router-link></li>
+            </ul>             
+            <li> <a href="/">Home</a></li>
         </nav>
-    </section> -->
+        <div><p>dataylorx@gmail.com</p></div>
+      </section>
     </div>
   
   </main><!-- container -->
 
-
+<script src="/bundle.js"></script>
   <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
 //]]></script>
