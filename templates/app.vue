@@ -2,14 +2,15 @@
   <main class="container" >
     
     <section class="main-view square-content yellow redColour">
+      <transition name="fade" mode="out-in">
         <router-view></router-view>
+      </transition>
     </section>
     
     <section class="side-view padding-20 green bluetext">
-      <h2>Projects:</h2>
-      <h3><i>for fun and profit</i></h3>
+      <h2>Projects: <i>for fun and profit</i></h2>
       <navigation></navigation>
-      <div><p>dataylorx@gmail.com</p></div>
+      <div><p>Email: dataylorx@gmail.com</p></div>
     </section>
   
   </main><!-- container -->
@@ -19,3 +20,18 @@
       name: 'app'
     }
   </script>
+
+  <style>
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .30s;
+}
+
+/*.fade-enter-active {
+  transition-delay: .25s;
+}*/
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+  </style>
