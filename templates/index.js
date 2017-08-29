@@ -3,6 +3,8 @@ const Pong = require('./pong.vue');
 const Talk = require('./talk-wellington.vue');
 const Fin = require('./fin.vue');
 const Trails = require('./trails.vue');
+const Navigation = require('./navigation.vue');
+const App = require('./app.vue');
 
 const routes = [
     { path: '/', component: Home },
@@ -16,7 +18,11 @@ const router = new VueRouter({
 	routes
 });
 
+Vue.component('navigation', Navigation);
+
 
 const app = new Vue ({
+	template: '<App/>',
+	components: { App },
 	router
 }).$mount('#app');

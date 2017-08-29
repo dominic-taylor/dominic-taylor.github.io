@@ -1,7 +1,7 @@
 * {
 	padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
 }
 li {
 	list-style: none;
+	margin-top: 10px;
 }
 
 h1	{
@@ -22,53 +23,48 @@ h1	{
 
 }
 .container {
+	display: block;
 	height: 100vh;
 	width: 100vw;
-	display: flex;
-}
-.small-container {
-	/*display: inline;*/
-	height: 100vh;
-	width: 33vw;
-	border-left: 5px dotted black;
-}
-.padding-20{
-		padding:20px; 
+
 
 }
-.main {
+
+.padding-20{
+	padding:20px; 
+}
+.main-view {
 	display: flex;
 	height: 100%;
-	width: 66%;
+	width: 100%;
+	border-bottom: 5px dotted black;
 }
-.two-thirds {
+.side-view {
+	/*display: none;*/
 	height: 100%;
-/*	width: 33%;*/
+	width: auto;
 }
-.one-third {
-	height: 34%;
-}
+
 .headingbox {
 	margin: 1em;
 }
 .square-content {
-  align-items: center;
-  justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 .red {
 	background: rgb(238, 6, 59);
 	color: rgb(18, 39, 132);
 }
 .green {
-    background: rgb(41, 162, 80);
-    color: #f58b57;
+	background: rgb(41, 162, 80);
+	color: #f58b57;
 }
 .yellow {
 	background: rgb(248, 228, 1);
 }
 .blue {
 	background: rgb(18, 39, 132);
-
 	color: #fff;
 }
 .redColour{
@@ -81,43 +77,23 @@ h1	{
 	color: rgb(41,162,80);
 }
 .nav_link {
-	vertical-align: baseline;
-	text-decoration: none;
-	display: block;
 	background: #e84635;
-	min-width: 200px;
 	color: rgb(18,39,132);
-	width: auto;
-	min-height: 50px;
-	height: auto;
-	margin: 5px;
-	padding: 0.5rem 1rem;
 	font-size: 1.5rem;
 }
 
-/*.top {
-	display: flex;
-	justify-content: flex-end;
-	min-height: 30vh;
-	height: auto;
-	width: 100%;
-	padding: 2vw;
-	background: #1f7dfa;
-}
+@media (min-width: 768px)	{
+	.container {
+		display: flex;
 
-.middle {
-	min-height: 40vh;
-	height: auto;
-	background: #06c7a0;
-	width: 100%;
-	padding: 2vw;
-	
+	}
+	.main-view {
+		width: 67%;
+		border-bottom: none;
+	}
+	.side-view {
+		display: block;
+		width: 33%;
+		border-left: 5px dotted black;
+	}
 }
-.bottom {
-	min-height: 30vh;
-	height: auto;
-	width: 100%;
-	padding: 2vw;
-	background: #d019c5;
-}
-
