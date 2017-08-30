@@ -15,10 +15,9 @@ const routes = [
 	{ path: '/fin', component: Fin}
 ];
 
-// Change back to history on deployment for scroll effect when component changes. 
 
 const router = new VueRouter({
-	 // mode: 'history',
+	 mode: 'history',
 	routes,
 	scrollBehavior (to, from, savedPosition) {
 	  return { x: 0, y: 0 }
