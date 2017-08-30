@@ -26,8 +26,6 @@ h1	{
 	display: block;
 	height: 100vh;
 	width: 100vw;
-
-
 }
 
 .padding-20{
@@ -35,16 +33,20 @@ h1	{
 }
 .main-view {
 	display: flex;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	border-bottom: 5px dotted black;
 }
 .side-view {
 	/*display: none;*/
-	height: 100%;
+	height: 100vh;
 	width: auto;
 }
-
+.contact{
+	font-size: 1.5em;
+	position: fixed;
+    bottom: 2em;
+}
 .headingbox {
 	margin: 1em;
 }
@@ -52,25 +54,11 @@ h1	{
 	align-items: center;
 	justify-content: center;
 }
-.red {
-	background: rgb(238, 6, 59);
-	color: rgb(18, 39, 132);
-}
-.green {
-	background: rgb(41, 162, 80);
-	color: #f58b57;
-}
-.yellow {
-	background: rgb(248, 228, 1);
-}
-.blue {
-	background: rgb(18, 39, 132);
-	color: #fff;
-}
+
 .redColour{
 	color: rgb(238, 6, 59);
 }
-.bluetext{
+.blueColour{
 	color: rgb(18,39,132);
 }
 .greentext {
@@ -81,25 +69,42 @@ h1	{
 	color: rgb(18,39,132);
 	font-size: 1.5rem;
 }
-/*.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
+.visit_project {
+	display: flex;
+	text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: #e84635;
+    border: 1px solid black;
+    margin-top: 2.5rem;
+    color: rgb(248, 228, 1);
 }
-.fade-enter, .fade-leave-to {
-  opacity: 0
-}*/
 
+.green {
+	background: rgb(41, 162, 80);
+
+}
+.yellow {
+	background: rgb(248, 228, 1);
+}
+.blue {
+	background: rgb(18, 39, 132);
+	color: #fff;
+}
 @media (min-width: 768px)	{
 	.container {
 		display: flex;
 
 	}
 	.main-view {
-		width: 67%;
+		width: 67vw;
 		border-bottom: none;
 	}
 	.side-view {
 		display: block;
-		width: 33%;
+		width: 33vw;
 		border-left: 5px dotted black;
 	}
 }

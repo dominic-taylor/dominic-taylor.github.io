@@ -7622,6 +7622,7 @@ var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".fade-en
 //
 //
 //
+//
 
 module.exports = {
   name: 'app'
@@ -7631,8 +7632,8 @@ module.exports = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('main',{staticClass:"container"},[_c('section',{staticClass:"main-view square-content yellow redColour"},[_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('router-view')],1)],1),_vm._v(" "),_c('section',{staticClass:"side-view padding-20 green bluetext"},[_vm._m(0),_vm._v(" "),_c('navigation'),_vm._v(" "),_vm._m(1)],1)])}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',[_vm._v("Projects: "),_c('i',[_vm._v("for fun and profit")])])},function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('p',[_vm._v("Email: dataylorx@gmail.com")])])}]
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('main',{staticClass:"container"},[_c('section',{staticClass:"main-view square-content yellow redColour"},[_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('router-view')],1)],1),_vm._v(" "),_c('section',{staticClass:"side-view padding-20 green blueColour"},[_vm._m(0),_vm._v(" "),_c('navigation'),_vm._v(" "),_vm._m(1)],1)])}
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',[_vm._v("Projects: "),_c('i',[_vm._v("for fun and profit")])])},function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('p',{staticClass:"contact"},[_vm._v("myEmail@myemail.com")])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -7667,7 +7668,7 @@ if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("FIN")]),_vm._v(" "),_c('h2',[_vm._v("HTML & CSS landing page.")])]),_vm._v(" "),_c('div',[_c('a',{attrs:{"href":"https://dominic-taylor.github.io/fin/"}},[_vm._v("Link")])])])}]
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("FIN")]),_vm._v(" "),_c('h2',[_vm._v("HTML & CSS landing page.")]),_vm._v(" "),_c('a',{staticClass:"visit_project square-content",attrs:{"href":"https://dominic-taylor.github.io/fin/","target":"_blank"}},[_vm._v("Go to")])])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -7675,7 +7676,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-454e9f95", __vue__options__)
   } else {
-    hotAPI.reload("data-v-454e9f95", __vue__options__)
+    hotAPI.rerender("data-v-454e9f95", __vue__options__)
   }
 })()}
 },{"vue":2,"vue-hot-reload-api":1}],6:[function(require,module,exports){
@@ -7721,6 +7722,7 @@ const Navigation = require('./navigation.vue');
 const App = require('./app.vue');
 
 const routes = [
+	{ path: '*', component: Home },
     { path: '/', component: Home },
 	{ path: '/pong', component: Pong },
 	{ path: '/talk-wellington', component: Talk},
@@ -7728,8 +7730,10 @@ const routes = [
 	{ path: '/fin', component: Fin}
 ];
 
+// Change back to history on deployment for scroll effect when component changes. 
+
 const router = new VueRouter({
-	 mode: 'history',
+	 // mode: 'history',
 	routes,
 	scrollBehavior (to, from, savedPosition) {
 	  return { x: 0, y: 0 }
@@ -7758,7 +7762,6 @@ const app = new Vue ({
 //
 //
 //
-//
 
 module.exports = {
   name: 'navigation'
@@ -7768,8 +7771,8 @@ module.exports = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{},[_c('ul',[_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/pong"}},[_vm._v("Pick-Up Pong")])],1),_vm._v(" "),_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/fin"}},[_vm._v("Fin")])],1),_vm._v(" "),_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/talk-wellington"}},[_vm._v("Talk Wellington")])],1),_vm._v(" "),_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/trails"}},[_vm._v("Trails")])],1),_vm._v(" "),_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/pong"}},[_vm._v("ViewChoose")])],1),_vm._v(" "),_vm._m(0)])])}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',[_c('a',{attrs:{"href":"/"}},[_vm._v("Home")])])}]
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{},[_c('ul',[_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/pong"}},[_vm._v("Pick-Up Pong")])],1),_vm._v(" "),_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/fin"}},[_vm._v("Fin")])],1),_vm._v(" "),_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/talk-wellington"}},[_vm._v("Talk Wellington")])],1),_vm._v(" "),_c('li',[_c('router-link',{staticClass:"nav_link",attrs:{"to":"/trails"}},[_vm._v("Trails")])],1),_vm._v(" "),_vm._m(0)])])}
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',[_c('a',{staticClass:"nav_link yellow",attrs:{"href":"/"}},[_vm._v("Home")])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -7777,11 +7780,12 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-30ff200c", __vue__options__)
   } else {
-    hotAPI.reload("data-v-30ff200c", __vue__options__)
+    hotAPI.rerender("data-v-30ff200c", __vue__options__)
   }
 })()}
 },{"vue":2,"vue-hot-reload-api":1}],9:[function(require,module,exports){
 ;(function(){
+//
 //
 //
 //
@@ -7800,7 +7804,7 @@ if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("Pick Up Pong")]),_vm._v(" "),_c('h2',[_vm._v("Socket to server two player action")]),_vm._v(" "),_c('h2',[_vm._v("Play Pong against others online.")])])}]
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("Pick-Up Pong")]),_vm._v(" "),_c('h2',[_vm._v("Socket to server two player action")]),_vm._v(" "),_c('h2',[_vm._v("Play Pong against others online.")]),_vm._v(" "),_c('a',{staticClass:"visit_project square-content",attrs:{"href":"https://pickup-pong.herokuapp.com/","target":"_blank"}},[_vm._v("Go to")])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -7808,7 +7812,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-988e0344", __vue__options__)
   } else {
-    hotAPI.reload("data-v-988e0344", __vue__options__)
+    hotAPI.rerender("data-v-988e0344", __vue__options__)
   }
 })()}
 },{"vue":2,"vue-hot-reload-api":1}],10:[function(require,module,exports){
@@ -7822,6 +7826,8 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
 //
 //
 //
+//
+//
 
 module.exports = {
 	name: 'talk-wellington'
@@ -7832,7 +7838,7 @@ if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("Talk Wellington")]),_vm._v(" "),_c('h2',[_vm._v("HTML, CSS & JS on WordPress.")])])}]
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("Talk Wellington")]),_vm._v(" "),_c('h2',[_vm._v("HTML, CSS & JS on WordPress.")]),_vm._v(" "),_c('a',{staticClass:"visit_project square-content",attrs:{"href":"https://talkwellington.org.nz/","target":"_blank"}},[_vm._v("Go to")])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -7840,7 +7846,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-6137036c", __vue__options__)
   } else {
-    hotAPI.reload("data-v-6137036c", __vue__options__)
+    hotAPI.rerender("data-v-6137036c", __vue__options__)
   }
 })()}
 },{"vue":2,"vue-hot-reload-api":1}],11:[function(require,module,exports){
@@ -7854,6 +7860,8 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
 //
 //
 //
+//
+//
 
 module.exports = {
 	name: 'talk-wellington'
@@ -7864,7 +7872,7 @@ if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("Trails")]),_vm._v(" "),_c('h2',[_vm._v("React, CSS, Node & JavaScript.")]),_vm._v(" "),_c('h2',[_vm._v("Geolocation scavanger hunt.")])])}]
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"headingbox"},[_c('h1',[_vm._v("Trails")]),_vm._v(" "),_c('h2',[_vm._v("React, CSS, Node & JavaScript.")]),_vm._v(" "),_c('h2',[_vm._v("Geolocation scavanger hunt.")]),_vm._v(" "),_c('a',{staticClass:"visit_project square-content",attrs:{"href":"https://trails-app.herokuapp.com/","target":"_blank"}},[_vm._v("Go to")])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -7872,7 +7880,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-777550da", __vue__options__)
   } else {
-    hotAPI.reload("data-v-777550da", __vue__options__)
+    hotAPI.rerender("data-v-777550da", __vue__options__)
   }
 })()}
 },{"vue":2,"vue-hot-reload-api":1}],12:[function(require,module,exports){

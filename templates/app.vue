@@ -7,10 +7,11 @@
       </transition>
     </section>
     
-    <section class="side-view padding-20 green bluetext">
+    <section class="side-view padding-20 green blueColour">
       <h2>Projects: <i>for fun and profit</i></h2>
       <navigation></navigation>
-      <div><p>Email: dataylorx@gmail.com</p></div>
+      <div>                    
+      <p class="contact">myEmail@myemail.com</p></div>
     </section>
   
   </main><!-- container -->

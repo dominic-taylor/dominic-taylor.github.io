@@ -7,6 +7,7 @@ const Navigation = require('./navigation.vue');
 const App = require('./app.vue');
 
 const routes = [
+	{ path: '*', component: Home },
     { path: '/', component: Home },
 	{ path: '/pong', component: Pong },
 	{ path: '/talk-wellington', component: Talk},
@@ -14,8 +15,10 @@ const routes = [
 	{ path: '/fin', component: Fin}
 ];
 
+// Change back to history on deployment for scroll effect when component changes. 
+
 const router = new VueRouter({
-	 mode: 'history',
+	 // mode: 'history',
 	routes,
 	scrollBehavior (to, from, savedPosition) {
 	  return { x: 0, y: 0 }
