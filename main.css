@@ -5,8 +5,8 @@
 }
 
 body {
-	font-family: Arial;
-	color: rgb(18, 39, 132);
+	font-family: 'Lato', sans-serif, Arial;
+	/*color: rgb(18, 39, 132);*/
 	font-weight: 100;
 }
 li {
@@ -35,12 +35,14 @@ h1	{
 	display: flex;
 	height: 100vh;
 	width: 100vw;
-	border-bottom: 5px dotted black;
 }
 .side-view {
-	/*display: none;*/
+	display: none;
 	height: 100vh;
 	width: auto;
+}
+.menu-open {
+	display: block;
 }
 .contact{
 	font-size: 1.5em;
@@ -48,6 +50,7 @@ h1	{
     bottom: 2em;
 }
 .headingbox {
+	min-width: 80%;
 	margin: 1em;
 }
 .square-content {
@@ -65,23 +68,26 @@ h1	{
 	color: rgb(41,162,80);
 }
 .nav_link {
-	background: #e84635;
+	/*background: #e84635;*/
 	color: rgb(18,39,132);
 	font-size: 1.5rem;
 }
 .visit_project {
 	display: flex;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
     width: 150px;
     height: 50px;
     font-weight: bold;
     font-size: 1.5em;
-    background: #e84635;
+    /*background: #e84635;*/
     border: 1px solid black;
     margin-top: 2.5rem;
-    color: rgb(248, 228, 1);
+   /* color: rgb(248, 228, 1);*/
 }
-
+.nav_header {
+	font-style: italic;
+	font-weight: 400;
+}
 .green {
 	background: rgb(41, 162, 80);
 

@@ -6,7 +6,7 @@ const Trails = require('./trails.vue');
 const Navigation = require('./navigation.vue');
 const App = require('./app.vue');
 
-const routes = [
+const routes = [  
 	{ path: '*', component: Home },
     { path: '/', component: Home },
 	{ path: '/pong', component: Pong },
@@ -17,10 +17,10 @@ const routes = [
 
 
 const router = new VueRouter({
-	 mode: 'history',
+	 // mode: 'historyss',
 	routes,
-	scrollBehavior (to, from, savedPosition) {
-	  return { x: 0, y: 0 }
+	scrollBehavior(to, from, savedPosition) {
+	  return { x: 0, y: 0 };
 	}
 });
 
@@ -32,3 +32,10 @@ const app = new Vue ({
 	components: { App },
 	router
 }).$mount('#app');
+
+
+// let menu = document.getElementsByClass().addEventListener("side-view")[0];
+
+// document.getElementById('menu-button').addEventListener("click", function () {
+// 	// if (menu.classList.contains("menu-open"))
+// })
