@@ -1,14 +1,13 @@
  <template>
   <main class="container" >
-    <button v-on:click="togglemenu"></button> 
-    
+    <router-link class="menu-button" to="/nav"><h2>Projects</h2> </router-link>
     <section class="main-view square-content">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
     </section>
     
-    <section  class="side-view padding-20">
+    <section class="side-view padding-20">
       <h2 class="nav_header">Projects</h2>
       <navigation></navigation>
       <div>                    

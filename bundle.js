@@ -7624,7 +7624,6 @@ var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".fade-en
 //
 //
 //
-//
 
   module.exports = {
     name: 'app', 
@@ -7639,7 +7638,7 @@ var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".fade-en
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('main',{staticClass:"container"},[_c('button',{on:{"click":_vm.togglemenu}}),_vm._v(" "),_c('section',{staticClass:"main-view square-content"},[_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('router-view')],1)],1),_vm._v(" "),_c('section',{staticClass:"side-view padding-20"},[_c('h2',{staticClass:"nav_header"},[_vm._v("Projects")]),_vm._v(" "),_c('navigation'),_vm._v(" "),_vm._m(0)],1)])}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('main',{staticClass:"container"},[_c('router-link',{staticClass:"menu-button",attrs:{"to":"/nav"}},[_c('h2',[_vm._v("Projects")])]),_vm._v(" "),_c('section',{staticClass:"main-view square-content"},[_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('router-view')],1)],1),_vm._v(" "),_c('section',{staticClass:"side-view padding-20"},[_c('h2',{staticClass:"nav_header"},[_vm._v("Projects")]),_vm._v(" "),_c('navigation'),_vm._v(" "),_vm._m(0)],1)],1)}
 __vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('p',{staticClass:"contact"},[_vm._v("myEmail@myemail.com")])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -7649,7 +7648,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-48dd92ab", __vue__options__)
   } else {
-    hotAPI.rerender("data-v-48dd92ab", __vue__options__)
+    hotAPI.reload("data-v-48dd92ab", __vue__options__)
   }
 })()}
 },{"vue":2,"vue-hot-reload-api":1,"vueify/lib/insert-css":3}],5:[function(require,module,exports){
@@ -7730,7 +7729,8 @@ const routes = [
 	{ path: '/pong', component: Pong },
 	{ path: '/talk-wellington', component: Talk},
 	{ path: '/trails', component: Trails},
-	{ path: '/fin', component: Fin}
+	{ path: '/fin', component: Fin},
+	{ path: '/nav', component: Navigation}
 ];
 
 

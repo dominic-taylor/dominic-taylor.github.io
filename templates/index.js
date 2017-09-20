@@ -12,7 +12,8 @@ const routes = [
 	{ path: '/pong', component: Pong },
 	{ path: '/talk-wellington', component: Talk},
 	{ path: '/trails', component: Trails},
-	{ path: '/fin', component: Fin}
+	{ path: '/fin', component: Fin},
+	{ path: '/nav', component: Navigation}
 ];
 
 
