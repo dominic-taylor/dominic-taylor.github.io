@@ -7,7 +7,7 @@ const Navigation = require('./navigation.vue');
 const App = require('./app.vue');
 
 const routes = [  
-	{ path: '*', component: Home },
+	
     { path: '/', component: Home },
 	{ path: '/pong', component: Pong },
 	{ path: '/talk-wellington', component: Talk},
