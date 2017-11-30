@@ -27,7 +27,7 @@ h2 {
 	max-width: 550px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+
 }
 .nav {
 	display: flex;
@@ -67,7 +67,9 @@ h2 {
 	font-family: 'Lato', sans-serif;
 	background: #fff;
   text-align: center;
-  width: 100%; 
+  min-width: 100%;
+   width: 95vw;
+
 }
 .footer {
 	display: flex;
@@ -76,8 +78,6 @@ h2 {
 }
 
 .inside {
-    width: 100%; 
-
 	padding: 1rem;
 }
 .active {
@@ -89,8 +89,9 @@ section {
 	z-index: -10;
 }
 
-@media (min-width: 736px) {
+@media (min-width: 500px) {
   .main{
+    width: 32rem; 
     padding: 0;
   }
  .inside {
