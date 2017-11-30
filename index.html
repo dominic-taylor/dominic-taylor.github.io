@@ -15,7 +15,7 @@
 
     <div class="row">
 
-      <div class="">
+      <!-- <div class=""> -->
         <main class="main">
           <div class="inside"> 
             <nav class="nav">
@@ -27,26 +27,20 @@
             </nav>
             <section id="me" class="active">
               <h2>Hi, I'm Dominic.</h2>
-              <p>I'm a developer in Wellington, NZ. Right now I'm open to new opportunites and would consider a move, so take a look at some of my work and get in touch if you're interested. </p>
-         <!--      <h3>Likes:</h3>
-              <ul>
-                <li>JavaScript</li> 
-                <li>React</li>
-                <li>Android</li>
-              </ul> -->
+              <p>I'm a developer in Wellington, NZ. Right now I'm open to new opportunites and would consider a move, so get in touch if you're interested. </p>
             </section>
-            <section id="me" class="inactive">
+            <section id="work" class="inactive">
               <h2>Work.</h2>
               <p>Some projects I've done work on </p>
             </section>
-            <section id="me" class="inactive">
+            <section id="contact" class="inactive">
               <h2>Contact</h2>
               <p>Call me. Email prefered.</p>
               <div class="footer"><a href="#">Git</a><a href="#">Email</a><a href="#">lnk</a></div>
             </section>  
           </div>
         </main>
-      </div>
+      <!-- </div> -->
 
 
     </div>
@@ -57,4 +51,33 @@
 
   
 </body>
+<script type="text/javascript">
+  var links = document.querySelectorAll('.nav-link');
+  var me = document.querySelector('#me');
+  var work = document.querySelector('#work');
+  var contact = document.querySelector('#contact');
+
+
+  links[0].addEventListener('click', function() {
+    closeActive();
+    me.classList.add('active');
+  });
+
+  links[1].addEventListener('click', function() {
+    closeActive();
+    work.classList.add('active');
+  });
+
+
+  links[2].addEventListener('click', function() {
+    closeActive();
+    contact.classList.add('active');
+  });
+
+  function closeActive(){
+     var active = document.querySelector('.active');
+     active.classList.remove('active');
+  }
+
+</script>
 </html>
