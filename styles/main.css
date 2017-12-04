@@ -6,9 +6,10 @@ body {
 }
 body:before {
   	content: '';
-  	background: aliceblue;
     display: block;
-    background-image: linear-gradient(45deg, #9B8BC7 0%, #EDA074 100%);
+    background: #67b26f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4ca2cdd1, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4ca2cdd1, #67b26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: fixed;
     top: 0;
     left: 0;
@@ -73,8 +74,8 @@ h2 {
 }
 .footer {
 	display: flex;
-  	align-items: center;
-  	justify-content: space-evenly;
+	align-items: center;
+	justify-content: space-evenly;
 }
 .work {
   text-align: left;
