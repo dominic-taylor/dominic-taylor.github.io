@@ -83,14 +83,28 @@ h2 {
 .inside {
 	padding: 1rem;
 }
+
+.inactive {
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease 0s,height 1s ease 0s;
+  display: none;
+}
+
 .active {
   display: block;
-	z-index: 10;
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease 0s,height 1s ease 0s;
+
 }
-section {
+
+/*section {
 	display: none;
 	z-index: -10;
-}
+  opacity: 0;
+  transition: opacity 1s ease 0s,transform 1s ease 0s;
+}*/
 
 @media (min-width: 500px) {
   .main{
