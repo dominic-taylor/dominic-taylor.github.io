@@ -98,14 +98,17 @@ h2 {
   transition: opacity 1s ease 0s,height 1s ease 0s;
 
 }
+a{
+  color: #333;
+}
+ul{
+  padding-left: 0;
+list-style: none;
+}
+li {
+text-align: center;
 
-/*section {
-	display: none;
-	z-index: -10;
-  opacity: 0;
-  transition: opacity 1s ease 0s,transform 1s ease 0s;
-}*/
-
+}
 @media (min-width: 500px) {
   .main{
     width: 32rem; 
