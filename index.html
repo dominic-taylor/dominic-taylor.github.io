@@ -4,83 +4,34 @@
   <title>Dominic Taylor's Website</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css" type="text/css"> 
 </head>
 
-<body>
-
-  <div class="container">
-
-
-    <div class="row">
-
- 
-        <main class="main">
-          <div class="inside"> 
-            <nav class="nav">
-              <ul>
-                <li><a class="nav-link" href="#">Me</a></li>  
-                <li><a class="nav-link" href="#">Work</a></li>  
-                <li><a class="nav-link" href="#">Contact</a></li>  
-              </ul>
-            </nav>
-            <section  id="me" class="active inactive">
-              <h2>Hi, I'm Dominic.</h2>
-              <p>I'm a developer in Wellington, NZ. Right now I'm open to new opportunites and would consider a move, so get in touch if you're interested. </p>
-            </section>
-            <section  id="work" class="inactive">
-              <h2>Work</h2>
-              <p>Some of my projects.</p>
-               <ul class="work">
-                <li><a  href="https://talkwellington.org.nz/" target="_blank">Talk Wellington</a></li>  
-                <li><a  href="https://pickup-pong.herokuapp.com/" target="_blank">Pick Up Pong</a></li>  
-                <li><a  href="https://digital-profile.github.io/" target="_blank">Digital Profile Project</a></li>  
-                <li><a  href="http://trails-app.herokuapp.com/" target="_blank">Trails</a></li>  
-              </ul>
-            </section>
-            <section  id="contact" class="inactive">
-              <h2>Contact</h2>
-              <p>Email preferred.</p>
-              <div class="footer"><a href="https://github.com/dominic-taylor">Git</a><a href="#">Email</a><a href="#">lnk</a></div>
-            </section>  
-          </div>
-        </main>
-      
-
-    </div>
-
-
-  </div>
+<body class="h-align">
   
+  <div class="wrapper">
+    
+      <header>
+        <h1 class="name">Dominic Taylor</h1>
+        <h2 class="description">DEVELOPER</h2>
+      </header>
+      <main class="main">
+        <p>I like making websites and apps for fun and profit. Partial to JavaScript but open to anything.</p>
+        <h4>Projects</h4>
+        <ul>
+          <li><p>Talk Wellington</p></li>
+          <li><p>Spinvision</p></li>
+        </ul>
+      </main>
+    <footer><div class="gitlink width50">git</div><div class="email width50">email</div></footer>
+    
+  </div>
+
 </body>
 <script type="text/javascript">
-  var links = document.querySelectorAll('.nav-link');
-  var me = document.querySelector('#me');
-  var work = document.querySelector('#work');
-  var contact = document.querySelector('#contact');
 
-
-  links[0].addEventListener('click', function() {
-    closeActive();
-    me.classList.add('active');
-  });
-
-  links[1].addEventListener('click', function() {
-    closeActive();
-    work.classList.add('active');
-  });
-
-
-  links[2].addEventListener('click', function() {
-    closeActive();
-    contact.classList.add('active');
-  });
-
-  function closeActive(){
-     var active = document.querySelector('.active');
-     active.classList.remove('active');
-  }
 
 </script>
 </html>
