@@ -4,83 +4,73 @@
   <title>Dominic Taylor's Website</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto" rel="stylesheet"> 
   <link rel="stylesheet" href="./styles/main.css" type="text/css"> 
 </head>
 
 <body>
-
-  <div class="container">
-
-
-    <div class="row">
-
- 
+  <div class="square-content">
+    <div class="wrapper">
+      
+        <header class="header">
+          <h1 class="name">Dominic Taylor</h1>
+          <h2 class="description">Developer</h2>
+        </header>
         <main class="main">
-          <div class="inside"> 
-            <nav class="nav">
-              <ul>
-                <li><a class="nav-link" href="#">Me</a></li>  
-                <li><a class="nav-link" href="#">Work</a></li>  
-                <li><a class="nav-link" href="#">Contact</a></li>  
-              </ul>
-            </nav>
-            <section id="me" class="active">
-              <h2>Hi, I'm Dominic.</h2>
-              <p>I'm a developer in Wellington, NZ. Right now I'm open to new opportunites and would consider a move, so get in touch if you're interested. </p>
-            </section>
-            <section id="work" class="inactive">
-              <h2>Work.</h2>
-              <p>Some of my projects.</p>
-               <ul class="work">
-                <li><a  href="https://talkwellington.org.nz/" target="_blank">Talk Wellington</a></li>  
-                <li><a  href="https://pickup-pong.herokuapp.com/" target="_blank">Pick Up Pong</a></li>  
-                <li><a  href="https://digital-profile.github.io/" target="_blank">Digital Profile Project</a></li>  
-                <li><a  href="http://trails-app.herokuapp.com/" target="_blank">Trails</a></li>  
-              </ul>
-            </section>
-            <section id="contact" class="inactive">
-              <h2>Contact</h2>
-              <p>Call me.</p>
-              <div class="footer"><a href="https://github.com/dominic-taylor">Git</a><a href="#">Email</a><a href="#">lnk</a></div>
-            </section>  
+          <div class="intro">
+            <p>I like making websites and apps for fun and profit.</p> <p>
+            Partial to JavaScript but open to anything.</p>
           </div>
+          <ul>
+            <li><a href="https://talkwellington.org.nz/"><p>Talk Wellington</p></a></li>
+            <li><a href="https://pickup-pong.herokuapp.com/"><p>Pickup Pong</p></a></li>
+            <li><a href="https://spinvision.herokuapp.com/"><p>Spinvision</p></a></li>
+          </ul>
         </main>
       
-
     </div>
+      <footer class="footer">
+        <a href="https://github.com/dominic-taylor">
+          <div class="contactlink">
+            <img
+            src="github.svg" 
+            alt="my github profile"
+            height="44px"
+            width="50px" />
+        </div>
+      </a>
+          <div class="contactlink">
+            
+          
+        
+      <script type="text/javascript" language="javascript">
 
+        // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+        // Random encryption key feature coded by Andrew Moulden
+        // This code is freeware provided these four comment lines remain intact
+        // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+        { coded = "8PaO2PSUg89@OEcPUg89aOv.ONd"
+          key = "o2NzJCFBi0yLeEUfGZSWxMPAqKgOlhD1kwb8urXcI6QRYjHvpmt7sdT93n54Va"
+          shift=coded.length
+          link=""
+          for (i=0; i<coded.length; i++) {
+            if (key.indexOf(coded.charAt(i))==-1) {
+              ltr = coded.charAt(i)
+              link += (ltr)
+            }
+            else {     
+              ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+              link += (key.charAt(ltr))
+            }
+          }
+        document.write("<a href='mailto:"+link+"'>     <img src='mail.svg'                 alt='send me an email'                height='44px'                width='50px'                 />          </a>")
+        }
 
+      </script>
+      </div>
+<noscript>Sorry, you need Javascript on to email me.</noscript>
+        </footer>
   </div>
-  
 </body>
-<script type="text/javascript">
-  var links = document.querySelectorAll('.nav-link');
-  var me = document.querySelector('#me');
-  var work = document.querySelector('#work');
-  var contact = document.querySelector('#contact');
 
-
-  links[0].addEventListener('click', function() {
-    closeActive();
-    me.classList.add('active');
-  });
-
-  links[1].addEventListener('click', function() {
-    closeActive();
-    work.classList.add('active');
-  });
-
-
-  links[2].addEventListener('click', function() {
-    closeActive();
-    contact.classList.add('active');
-  });
-
-  function closeActive(){
-     var active = document.querySelector('.active');
-     active.classList.remove('active');
-  }
-
-</script>
 </html>
